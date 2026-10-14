@@ -1,0 +1,467 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Browse the complete Prime Enterprise retail catalogue. Premium electronics, luxury accessories, and everyday elevated goods.">
+  <title>Catalogue &amp; Shop | Prime Enterprise</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header Announcement Bar -->
+  <div class="header-top-bar">
+    <div class="container">
+      <span>Curated Lifestyle Essentials &bull; <strong>Peak Quality, Always in Our Prime</strong></span>
+      <a href="about.html">Learn About Our Quality Standard &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Global Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Prime Enterprise Homepage">
+        <span class="logo-prime">PRIME</span>
+        <span class="logo-enterprise">ENTERPRISE</span>
+        <span class="logo-mark" aria-hidden="true"></span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-label="Toggle Navigation">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="shop.html" class="nav-link active" aria-current="page">Shop</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="mobile-nav-actions">
+          <a href="cart.html" class="header-action-link cart-link-btn">
+            <span>Shopping Bag</span>
+            <span class="cart-count-badge">2</span>
+          </a>
+          <a href="login.html" class="header-action-link">Sign In / Account</a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <a href="login.html" class="header-action-link">Sign In</a>
+        <a href="cart.html" class="header-action-link cart-link-btn">
+          <span>Bag</span>
+          <span class="cart-count-badge">2</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <nav class="breadcrumbs" aria-label="Breadcrumb Trail">
+    <div class="container">
+      <ol class="breadcrumbs-list">
+        <li class="breadcrumbs-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumbs-item active" aria-current="location">Shop Catalogue</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <div class="container">
+      <!-- Page Introduction -->
+      <header class="section-header">
+        <span class="eyebrow">Complete Catalogue</span>
+        <h1>Curated Retail Collection</h1>
+        <p class="section-subtitle">A balanced suite of 12 premium goods engineered with timeless materials, tactile
+          refinement, and dependable performance.</p>
+      </header>
+
+      <!-- Transparent Demo Disclaimer Banner -->
+      <div class="demo-banner-box" role="region" aria-label="Static demonstration notice">
+        <span class="demo-tag">Catalogue Notice</span>
+        <div>
+          This catalogue is presented as a high-fidelity front-end demonstration. In compliance with strict static
+          HTML/CSS specifications, filter buttons and dropdown sorting options are displayed for visual layout purposes
+          and do not trigger dynamic database queries.
+        </div>
+      </div>
+
+      <!-- Catalogue Filter Toolbar -->
+      <div class="catalogue-toolbar">
+        <div class="catalogue-filters" role="group" aria-label="Category filters">
+          <a href="#all" class="filter-btn active">All Items (12)</a>
+          <a href="#tech" class="filter-btn">Tech &amp; Gadgets</a>
+          <a href="#fashion" class="filter-btn">Fashion &amp; Accessories</a>
+          <a href="#home" class="filter-btn">Home &amp; Living</a>
+          <a href="#essentials" class="filter-btn">Everyday Essentials</a>
+        </div>
+
+        <div class="catalogue-sort">
+          <label for="sort-select" class="sort-label">Sort by:</label>
+          <select id="sort-select" class="select-control" aria-label="Sort products">
+            <option selected>Featured Selection</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+            <option>Newest Arrivals</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Status Bar -->
+      <div class="catalogue-status-bar">
+        <span>Showing <strong>12</strong> of <strong>12</strong> premium products</span>
+        <span class="text-muted">Prices in Nigerian Naira (&#8358;)</span>
+      </div>
+
+      <!-- Product Grid (12 Products) -->
+      <div class="product-grid" style="margin-bottom: 60px;">
+        <!-- Product 1 -->
+        <article class="product-card">
+          <div class="product-card-image">
+            <span class="badge badge-featured product-card-badge">Best Seller</span>
+            <a href="product.html">
+              <img src="product-headphones.jpg" alt="Premium Wireless Headphones" loading="lazy">
+            </a>
+          </div>
+          <div class="product-card-body">
+            <span class="product-card-category">Tech &amp; Gadgets</span>
+            <h3 class="product-card-title"><a href="product.html">Premium Wireless Headphones</a></h3>
+            <div class="product-card-price-row">
+              <span class="product-price">&#8358;85,000</span>
+              <span class="product-price-original">&#8358;95,000</span>
+            </div>
+            <div class="product-card-actions">
+              <a href="product.html" class="btn btn-secondary">Details</a>
+              <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="product-card">
+          <div class="product-card-image">
+            <span class="badge badge-popular product-card-badge">Luxury</span>
+            <a href="product.html">
+              <img src="product-watch.jpg" alt="Classic Wristwatch" loading="lazy">
+            </a>
+          </div>
+          <div class="product-card-body">
+            <span class="product-card-category">Fashion &amp; Accessories</span>
+            <h3 class="product-card-title"><a href="product.html">Classic Wristwatch</a></h3>
+            <div class="product-card-price-row">
+              <span class="product-price">&#8358;125,000</span>
+            </div>
+            <div class="product-card-actions">
+              <a href="product.html" class="btn btn-secondary">Details</a>
+              <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product-card">
+          <div class="product-card-image">
+            <a href="product.html">
+              <img src="product-backpack.jpg" alt="Everyday Travel Backpack" loading="lazy">
+            </a>
+          </div>
+          <div class="product-card-body">
+            <span class="product-card-category">Everyday Essentials</span>
+            <h3 class="product-card-title"><a href="product.html">Everyday Travel Backpack</a></h3>
+            <div class="product-card-price-row">
+              <span class="product-price">&#8358;42,000</span>
+            </div>
+            <div class="product-card-actions">
+              <a href="product.html" class="btn btn-secondary">Details</a>
+              <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 4 -->
+        <article class="product-card">
+          <div class="product-card-image">
+            <a href="product.html">
+              <img src="product-speaker.jpg" alt="Portable Bluetooth Speaker" loading="lazy">
+            </a>
+          </div>
+          <div class="product-card-body">
+            <span class="product-card-category">Tech &amp; Gadgets</span>
+            <h3 class="product-card-title"><a href="product.html">Portable Bluetooth Speaker</a></h3>
+            <div class="product-card-price-row">
+              <span class="product-price">&#8358;38,500</span>
+            </div>
+            <div class="product-card-actions">
+              <a href="product.html" class="btn btn-secondary">Details</a>
+              <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 5 -->
+        <article class="product-card">
+          <div class="product-card-image">
+            <a href="product.html">
+              <img src="product-bottle.jpg" alt="Insulated Water Bottle" loading="lazy">
+            </a>
+          </div>
+          <div class="product-card-body">
+            <span class="product-card-category">Everyday Essentials</span>
+            <h3 class="product-card-title"><a href="product.html">Insulated Water Bottle</a></h3>
+            <div class="product-card-price-row">
+              <span class="product-price">&#8358;18,000</span>
+            </div>
+            <div class="product-card-actions">
+              <a href="product.html" class="btn btn-secondary">Details</a>
+              <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 6 -->
+        <article class="product-card">
+          <div class="product-card-image">
+            <span class="badge badge-featured product-card-badge">Handcrafted</span>
+            <a href="product.html">
+              <img src="product-wallet.jpg" alt="Minimalist Leather Wallet" loading="lazy">
+            </a>
+          </div>
+          <div class="product-card-body">
+            <span class="product-card-category">Fashion &amp; Accessories</span>
+            <h3 class="product-card-title"><a href="product.html">Minimalist Leather Wallet</a></h3>
+            <div class="product-card-price-row">
+              <span class="product-price">&#8358;24,500</span>
+            </div>
+            <div class="product-card-actions">
+              <a href="product.html" class="btn btn-secondary">Details</a>
+              <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 7 -->
+        <article class="product-card">
+          <div class="product-card-image">
+            <a href="product.html">
+              <img src="product-lamp.jpg" alt="Modern Desk Lamp" loading="lazy">
+            </a>
+          </div>
+          <div class="product-card-body">
+            <span class="product-card-category">Home &amp; Living</span>
+            <h3 class="product-card-title"><a href="product.html">Modern Desk Lamp</a></h3>
+            <div class="product-card-price-row">
+              <span class="product-price">&#8358;34,000</span>
+            </div>
+            <div class="product-card-actions">
+              <a href="product.html" class="btn btn-secondary">Details</a>
+              <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 8 -->
+        <article class="product-card">
+          <div class="product-card-image">
+            <a href="product.html">
+              <img src="product-sunglasses.jpg" alt="Premium Sunglasses" loading="lazy">
+            </a>
+          </div>
+          <div class="product-card-body">
+            <span class="product-card-category">Fashion &amp; Accessories</span>
+            <h3 class="product-card-title"><a href="product.html">Premium Sunglasses</a></h3>
+            <div class="product-card-price-row">
+              <span class="product-price">&#8358;29,500</span>
+            </div>
+            <div class="product-card-actions">
+              <a href="product.html" class="btn btn-secondary">Details</a>
+              <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 9 -->
+        <article class="product-card">
+          <div class="product-card-image">
+            <a href="product.html">
+              <img src="product-charger.jpg" alt="Wireless Charging Pad" loading="lazy">
+            </a>
+          </div>
+          <div class="product-card-body">
+            <span class="product-card-category">Tech &amp; Gadgets</span>
+            <h3 class="product-card-title"><a href="product.html">Wireless Charging Pad</a></h3>
+            <div class="product-card-price-row">
+              <span class="product-price">&#8358;22,000</span>
+            </div>
+            <div class="product-card-actions">
+              <a href="product.html" class="btn btn-secondary">Details</a>
+              <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 10 -->
+        <article class="product-card">
+          <div class="product-card-image">
+            <a href="product.html">
+              <img src="product-mug.jpg" alt="Stainless Steel Travel Mug" loading="lazy">
+            </a>
+          </div>
+          <div class="product-card-body">
+            <span class="product-card-category">Everyday Essentials</span>
+            <h3 class="product-card-title"><a href="product.html">Stainless Steel Travel Mug</a></h3>
+            <div class="product-card-price-row">
+              <span class="product-price">&#8358;19,500</span>
+            </div>
+            <div class="product-card-actions">
+              <a href="product.html" class="btn btn-secondary">Details</a>
+              <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 11 -->
+        <article class="product-card">
+          <div class="product-card-image">
+            <a href="product.html">
+              <img src="product-powerbank.jpg" alt="Compact Power Bank" loading="lazy">
+            </a>
+          </div>
+          <div class="product-card-body">
+            <span class="product-card-category">Tech &amp; Gadgets</span>
+            <h3 class="product-card-title"><a href="product.html">Compact Power Bank</a></h3>
+            <div class="product-card-price-row">
+              <span class="product-price">&#8358;27,000</span>
+            </div>
+            <div class="product-card-actions">
+              <a href="product.html" class="btn btn-secondary">Details</a>
+              <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 12 -->
+        <article class="product-card">
+          <div class="product-card-image">
+            <span class="badge badge-sale product-card-badge">Popular</span>
+            <a href="product.html">
+              <img src="product-crossbody.jpg" alt="Everyday Crossbody Bag" loading="lazy">
+            </a>
+          </div>
+          <div class="product-card-body">
+            <span class="product-card-category">Fashion &amp; Accessories</span>
+            <h3 class="product-card-title"><a href="product.html">Everyday Crossbody Bag</a></h3>
+            <div class="product-card-price-row">
+              <span class="product-price">&#8358;36,000</span>
+            </div>
+            <div class="product-card-actions">
+              <a href="product.html" class="btn btn-secondary">Details</a>
+              <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Bottom Promotional / Quality Banner -->
+      <div class="promo-banner" style="margin-bottom: 40px;">
+        <div class="promo-banner-inner">
+          <span class="eyebrow eyebrow-dark">Client Guarantee</span>
+          <h2>Uncompromising Quality in Every Order.</h2>
+          <p>Every product is hand-inspected before preparation. Have questions about dimensions, materials, or
+            compatibility?</p>
+          <a href="contact.html" class="btn btn-gold">Contact Customer Service &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo brand-logo-light">
+            <span class="logo-prime">PRIME</span>
+            <span class="logo-enterprise">ENTERPRISE</span>
+            <span class="logo-mark" aria-hidden="true"></span>
+          </a>
+          <div class="footer-motto">"Peak Quality, Always in Our Prime"</div>
+          <p class="footer-description">
+            Prime Enterprise is an independent retail destination dedicated to elevated everyday essentials, minimalist
+            acoustics, and enduring commuter lifestyle products.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="shop.html" class="footer-link">Product Catalogue</a></li>
+            <li><a href="about.html" class="footer-link">About Our Brand</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Support</a></li>
+            <li><a href="cart.html" class="footer-link">Shopping Bag</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Collections</h4>
+          <ul class="footer-links-list">
+            <li><a href="shop.html" class="footer-link">Tech &amp; Gadgets</a></li>
+            <li><a href="shop.html" class="footer-link">Fashion &amp; Accessories</a></li>
+            <li><a href="shop.html" class="footer-link">Home &amp; Living</a></li>
+            <li><a href="shop.html" class="footer-link">Everyday Essentials</a></li>
+            <li><a href="product.html" class="footer-link">Headphones Spotlight</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Official Contact</h4>
+          <div class="footer-contact-items">
+            <div class="footer-contact-item">
+              <strong>Telephone Support</strong>
+              <a href="tel:08103719799">08103719799</a>
+            </div>
+            <div class="footer-contact-item">
+              <strong>Email Inquiries</strong>
+              <a href="mailto:princeemuobosa37@gmail.com">princeemuobosa37@gmail.com</a>
+            </div>
+            <div class="footer-contact-item">
+              <strong>Physical Location</strong>
+              <span>Address to be announced</span>
+            </div>
+            <div class="footer-contact-item">
+              <strong>Operating Hours</strong>
+              <span>Business hours to be confirmed</span>
+            </div>
+          </div>
+
+          <div class="footer-social-row">
+            <a href="#" class="footer-social-btn" title="Instagram" aria-label="Instagram">&#9672;</a>
+            <a href="#" class="footer-social-btn" title="Facebook" aria-label="Facebook">&#9632;</a>
+            <a href="#" class="footer-social-btn" title="TikTok" aria-label="TikTok">&#9650;</a>
+            <a href="#" class="footer-social-btn" title="X (Twitter)" aria-label="X">&#10006;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Prime Enterprise. All rights reserved.</div>
+        <div class="footer-legal-links">
+          <a href="about.html">Privacy &amp; Terms</a>
+          <a href="contact.html">Customer Care</a>
+          <a href="login.html">Account Access</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
