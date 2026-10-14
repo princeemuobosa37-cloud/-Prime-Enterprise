@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Create an account with Prime Enterprise. Enjoy streamlined ordering, delivery tracking, and bespoke client concierge services.">
+  <title>Create Account | Prime Enterprise</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header Announcement Bar -->
+  <div class="header-top-bar">
+    <div class="container">
+      <span>Join Prime Enterprise &bull; <strong>Peak Quality, Always in Our Prime</strong></span>
+      <a href="index.html">Return to Storefront &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Global Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Prime Enterprise Homepage">
+        <span class="logo-prime">PRIME</span>
+        <span class="logo-enterprise">ENTERPRISE</span>
+        <span class="logo-mark" aria-hidden="true"></span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-label="Toggle Navigation">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="shop.html" class="nav-link">Shop</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="mobile-nav-actions">
+          <a href="cart.html" class="header-action-link cart-link-btn">
+            <span>Shopping Bag</span>
+            <span class="cart-count-badge">2</span>
+          </a>
+          <a href="login.html" class="header-action-link active">Sign In / Account</a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <a href="login.html" class="header-action-link">Sign In</a>
+        <a href="cart.html" class="header-action-link cart-link-btn">
+          <span>Bag</span>
+          <span class="cart-count-badge">2</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <nav class="breadcrumbs" aria-label="Breadcrumb Trail">
+    <div class="container">
+      <ol class="breadcrumbs-list">
+        <li class="breadcrumbs-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumbs-item active" aria-current="location">Create Account</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <div class="container auth-wrapper">
+      <div class="auth-card" style="max-width: 520px;">
+        <!-- Logo & Header -->
+        <div class="auth-header">
+          <a href="index.html" class="brand-logo" style="margin: 0 auto 16px;">
+            <span class="logo-prime">PRIME</span>
+            <span class="logo-enterprise">ENTERPRISE</span>
+            <span class="logo-mark" aria-hidden="true"></span>
+          </a>
+          <h1>Create an Account</h1>
+          <p>Join Prime Enterprise for bespoke service, fast checkout, and curated recommendations.</p>
+        </div>
+
+        <!-- Demonstration Notice -->
+        <div class="demo-banner-box" style="margin-bottom: 24px;">
+          <span class="demo-tag">Notice</span>
+          <div>Static prototype: Visual registration layout demonstration only. No personal data is stored or submitted.</div>
+        </div>
+
+        <!-- Registration Form -->
+        <form action="#" method="get">
+          <div class="form-group">
+            <label for="reg-name" class="form-label">Full Name <span class="req">*</span></label>
+            <input type="text" id="reg-name" name="fullname" class="form-input" placeholder="e.g. Babatunde Fashola" required minlength="3">
+          </div>
+
+          <div class="form-group">
+            <label for="reg-email" class="form-label">Email Address <span class="req">*</span></label>
+            <input type="email" id="reg-email" name="email" class="form-input" placeholder="you@domain.com" required autocomplete="email">
+          </div>
+
+          <div class="form-group">
+            <label for="reg-phone" class="form-label">Phone Number (Optional)</label>
+            <input type="tel" id="reg-phone" name="phone" class="form-input" placeholder="e.g. 08103719799">
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="reg-password" class="form-label">Password <span class="req">*</span></label>
+              <input type="password" id="reg-password" name="password" class="form-input" placeholder="Min. 8 characters" required minlength="8" autocomplete="new-password">
+            </div>
+
+            <div class="form-group">
+              <label for="reg-confirm" class="form-label">Confirm Password <span class="req">*</span></label>
+              <input type="password" id="reg-confirm" name="confirm_password" class="form-input" placeholder="Repeat password" required minlength="8" autocomplete="new-password">
+            </div>
+          </div>
+
+          <div style="margin: 18px 0 24px;">
+            <label class="checkbox-label">
+              <input type="checkbox" name="terms" required>
+              <span>I agree to the <a href="about.html" style="color:var(--color-gold); text-decoration:underline;">Terms &amp; Conditions</a> and Privacy Policy.</span>
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block btn-lg">
+            Create Account &rarr;
+          </button>
+        </form>
+
+        <!-- Auth Footer Navigation -->
+        <div class="auth-footer">
+          <p>Already have an account? <a href="login.html">Sign In Here</a></p>
+          <p style="margin-top: 10px;"><a href="index.html" style="color:var(--color-slate); font-weight:normal;">&larr; Return to Storefront Home</a></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo brand-logo-light">
+            <span class="logo-prime">PRIME</span>
+            <span class="logo-enterprise">ENTERPRISE</span>
+            <span class="logo-mark" aria-hidden="true"></span>
+          </a>
+          <div class="footer-motto">"Peak Quality, Always in Our Prime"</div>
+          <p class="footer-description">
+            Prime Enterprise is an independent retail destination dedicated to elevated everyday essentials, minimalist acoustics, and enduring commuter lifestyle products.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="shop.html" class="footer-link">Product Catalogue</a></li>
+            <li><a href="about.html" class="footer-link">About Our Brand</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Support</a></li>
+            <li><a href="cart.html" class="footer-link">Shopping Bag</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Collections</h4>
+          <ul class="footer-links-list">
+            <li><a href="shop.html" class="footer-link">Tech &amp; Gadgets</a></li>
+            <li><a href="shop.html" class="footer-link">Fashion &amp; Accessories</a></li>
+            <li><a href="shop.html" class="footer-link">Home &amp; Living</a></li>
+            <li><a href="shop.html" class="footer-link">Everyday Essentials</a></li>
+            <li><a href="product.html" class="footer-link">Headphones Spotlight</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Official Contact</h4>
+          <div class="footer-contact-items">
+            <div class="footer-contact-item">
+              <strong>Telephone Support</strong>
+              <a href="tel:08103719799">08103719799</a>
+            </div>
+            <div class="footer-contact-item">
+              <strong>Email Inquiries</strong>
+              <a href="mailto:princeemuobosa37@gmail.com">princeemuobosa37@gmail.com</a>
+            </div>
+            <div class="footer-contact-item">
+              <strong>Physical Location</strong>
+              <span>Address to be announced</span>
+            </div>
+            <div class="footer-contact-item">
+              <strong>Operating Hours</strong>
+              <span>Business hours to be confirmed</span>
+            </div>
+          </div>
+
+          <div class="footer-social-row">
+            <a href="#" class="footer-social-btn" title="Instagram" aria-label="Instagram">&#9672;</a>
+            <a href="#" class="footer-social-btn" title="Facebook" aria-label="Facebook">&#9632;</a>
+            <a href="#" class="footer-social-btn" title="TikTok" aria-label="TikTok">&#9650;</a>
+            <a href="#" class="footer-social-btn" title="X (Twitter)" aria-label="X">&#10006;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Prime Enterprise. All rights reserved. Built with semantic HTML5 &amp; CSS3.</div>
+        <div class="footer-legal-links">
+          <a href="about.html">Privacy &amp; Terms</a>
+          <a href="contact.html">Customer Care</a>
+          <a href="login.html">Account Access</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

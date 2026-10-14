@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Secure checkout overview at Prime Enterprise. Confirm contact details, delivery address, and payment method.">
+  <title>Checkout | Prime Enterprise</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header Announcement Bar -->
+  <div class="header-top-bar">
+    <div class="container">
+      <span>Curated Lifestyle Essentials &bull; <strong>Peak Quality, Always in Our Prime</strong></span>
+      <a href="cart.html">Edit Bag &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Global Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Prime Enterprise Homepage">
+        <span class="logo-prime">PRIME</span>
+        <span class="logo-enterprise">ENTERPRISE</span>
+        <span class="logo-mark" aria-hidden="true"></span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-label="Toggle Navigation">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="shop.html" class="nav-link">Shop</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="mobile-nav-actions">
+          <a href="cart.html" class="header-action-link cart-link-btn">
+            <span>Shopping Bag</span>
+            <span class="cart-count-badge">2</span>
+          </a>
+          <a href="login.html" class="header-action-link">Sign In / Account</a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <a href="login.html" class="header-action-link">Sign In</a>
+        <a href="cart.html" class="header-action-link cart-link-btn">
+          <span>Bag</span>
+          <span class="cart-count-badge">2</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <nav class="breadcrumbs" aria-label="Breadcrumb Trail">
+    <div class="container">
+      <ol class="breadcrumbs-list">
+        <li class="breadcrumbs-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumbs-item"><a href="cart.html">Shopping Bag</a></li>
+        <li class="breadcrumbs-item active" aria-current="location">Checkout Overview</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <div class="container">
+      <header class="section-header">
+        <span class="eyebrow">Express Fulfillment</span>
+        <h1>Order Checkout</h1>
+        <p class="section-subtitle">Please enter your shipping destination and select your preferred payment settlement.</p>
+      </header>
+
+      <!-- Demonstration Notice -->
+      <div class="demo-banner-box" role="region" aria-label="Checkout demonstration notice">
+        <span class="demo-tag">Demonstration Interface</span>
+        <div>
+          This checkout interface is an accessible front-end demonstration built with pure HTML5 form controls and CSS3. In accordance with zero-JavaScript and static-site parameters, no financial information is processed, and orders are not written to a database.
+        </div>
+      </div>
+
+      <!-- Checkout Split Form Grid -->
+      <form action="#" method="get" class="checkout-grid" style="margin-bottom: 72px;">
+        <!-- Left Column: Customer & Delivery Details -->
+        <div>
+          <!-- Step 1: Customer Information -->
+          <section class="checkout-section-card" aria-labelledby="step-1-title">
+            <div class="checkout-step-header">
+              <span class="step-num" aria-hidden="true">1</span>
+              <h2 id="step-1-title" style="font-size: 1.25rem;">Customer Information</h2>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="checkout-name" class="form-label">Full Name <span class="req">*</span></label>
+                <input type="text" id="checkout-name" name="fullname" class="form-input" placeholder="e.g. Chukwuemeka Okonkwo" required minlength="3">
+              </div>
+
+              <div class="form-group">
+                <label for="checkout-phone" class="form-label">Phone Number <span class="req">*</span></label>
+                <input type="tel" id="checkout-phone" name="phone" class="form-input" placeholder="e.g. 08103719799" required pattern="[0-9]{11}">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="checkout-email" class="form-label">Email Address <span class="req">*</span></label>
+              <input type="email" id="checkout-email" name="email" class="form-input" placeholder="you@example.com" required>
+            </div>
+          </section>
+
+          <!-- Step 2: Delivery Destination -->
+          <section class="checkout-section-card" aria-labelledby="step-2-title">
+            <div class="checkout-step-header">
+              <span class="step-num" aria-hidden="true">2</span>
+              <h2 id="step-2-title" style="font-size: 1.25rem;">Delivery Destination</h2>
+            </div>
+
+            <div class="form-group">
+              <label for="checkout-address" class="form-label">Street Address <span class="req">*</span></label>
+              <input type="text" id="checkout-address" name="street" class="form-input" placeholder="House number, street name, apartment or suite" required minlength="5">
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="checkout-city" class="form-label">City / Town <span class="req">*</span></label>
+                <input type="text" id="checkout-city" name="city" class="form-input" placeholder="e.g. Ikeja, Lekki, or Port Harcourt" required>
+              </div>
+
+              <div class="form-group">
+                <label for="checkout-state" class="form-label">State <span class="req">*</span></label>
+                <select id="checkout-state" name="state" class="form-select" required>
+                  <option value="" disabled selected>Select Nigerian State</option>
+                  <option value="Lagos">Lagos</option>
+                  <option value="Abuja">Abuja (FCT)</option>
+                  <option value="Rivers">Rivers</option>
+                  <option value="Ogun">Ogun</option>
+                  <option value="Oyo">Oyo</option>
+                  <option value="Edo">Edo</option>
+                  <option value="Delta">Delta</option>
+                  <option value="Enugu">Enugu</option>
+                  <option value="Anambra">Anambra</option>
+                  <option value="Kaduna">Kaduna</option>
+                  <option value="Kano">Kano</option>
+                  <option value="Other">Other State</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="checkout-postal" class="form-label">Postal Code (Optional)</label>
+                <input type="text" id="checkout-postal" name="postal" class="form-input" placeholder="e.g. 100001">
+              </div>
+
+              <div class="form-group">
+                <label for="checkout-notes" class="form-label">Delivery Instructions (Optional)</label>
+                <input type="text" id="checkout-notes" name="notes" class="form-input" placeholder="e.g. Call upon arrival at estate gate">
+              </div>
+            </div>
+          </section>
+
+          <!-- Step 3: Payment Method (Visual / Demonstrative) -->
+          <section class="checkout-section-card" aria-labelledby="step-3-title">
+            <div class="checkout-step-header">
+              <span class="step-num" aria-hidden="true">3</span>
+              <h2 id="step-3-title" style="font-size: 1.25rem;">Payment Method</h2>
+            </div>
+            <p style="font-size: 0.88rem; color: var(--color-slate); margin-bottom: 12px;">
+              Choose your preferred payment method. This is a front-end simulation; no transaction will take place.
+            </p>
+
+            <div class="payment-radio-group">
+              <label class="payment-radio-card">
+                <input type="radio" name="payment_method" value="bank_transfer" checked>
+                <div class="payment-card-content">
+                  <strong>Direct Bank Transfer</strong>
+                  <span>Transfer securely to our designated corporate account upon order verification.</span>
+                </div>
+              </label>
+
+              <label class="payment-radio-card">
+                <input type="radio" name="payment_method" value="pay_on_delivery">
+                <div class="payment-card-content">
+                  <strong>Pay on Delivery (Regional Only)</strong>
+                  <span>Available for confirmed addresses in Lagos metropolis and central Abuja.</span>
+                </div>
+              </label>
+
+              <label class="payment-radio-card">
+                <input type="radio" name="payment_method" value="card_placeholder">
+                <div class="payment-card-content">
+                  <strong>Debit / Credit Card (Placeholder)</strong>
+                  <span>Visa, Mastercard &amp; Verve gateway illustration.</span>
+                </div>
+              </label>
+            </div>
+          </section>
+        </div>
+
+        <!-- Right Column: Order Review & Placement -->
+        <aside class="order-summary-box" aria-label="Order summary breakdown">
+          <h2 class="order-summary-title">Order Overview</h2>
+
+          <!-- Item Mini Summaries -->
+          <div style="display: flex; flex-direction: column; gap: 14px; margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid var(--color-border);">
+            <div style="display: flex; justify-content: space-between; font-size: 0.9rem;">
+              <div>
+                <strong>1x Premium Wireless Headphones</strong>
+                <div style="font-size: 0.78rem; color: var(--color-muted-text);">Finish: Matte Charcoal</div>
+              </div>
+              <span>&#8358;85,000</span>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; font-size: 0.9rem;">
+              <div>
+                <strong>1x Minimalist Leather Wallet</strong>
+                <div style="font-size: 0.78rem; color: var(--color-muted-text);">Finish: Full-Grain Tan</div>
+              </div>
+              <span>&#8358;24,500</span>
+            </div>
+          </div>
+
+          <!-- Financial Breakdown -->
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <strong>&#8358;109,500</strong>
+          </div>
+
+          <div class="summary-row">
+            <span>Insured Delivery</span>
+            <strong>&#8358;4,500</strong>
+          </div>
+
+          <div class="summary-row" style="font-size: 0.82rem; color: var(--color-muted-text);">
+            <span>Statutory Taxes (VAT)</span>
+            <span>Included</span>
+          </div>
+
+          <div class="summary-row-total">
+            <span>Total Payable</span>
+            <span class="text-gold">&#8358;114,000</span>
+          </div>
+
+          <div style="margin-top: 24px;">
+            <label class="checkbox-label" style="margin-bottom: 16px;">
+              <input type="checkbox" required>
+              <span>I agree to the <a href="about.html" style="color:var(--color-gold); text-decoration:underline;">Terms of Service</a> and return policy.</span>
+            </label>
+
+            <button type="submit" class="btn btn-primary btn-block btn-lg">
+              Place Demonstration Order &rarr;
+            </button>
+          </div>
+
+          <div style="margin-top: 20px; font-size: 0.78rem; color: var(--color-muted-text); text-align: center; line-height: 1.5;">
+            Front-end static simulation &bull; No payment charged &bull; Order will not be processed.
+          </div>
+        </aside>
+      </form>
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo brand-logo-light">
+            <span class="logo-prime">PRIME</span>
+            <span class="logo-enterprise">ENTERPRISE</span>
+            <span class="logo-mark" aria-hidden="true"></span>
+          </a>
+          <div class="footer-motto">"Peak Quality, Always in Our Prime"</div>
+          <p class="footer-description">
+            Prime Enterprise is an independent retail destination dedicated to elevated everyday essentials, minimalist acoustics, and enduring commuter lifestyle products.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="shop.html" class="footer-link">Product Catalogue</a></li>
+            <li><a href="about.html" class="footer-link">About Our Brand</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Support</a></li>
+            <li><a href="cart.html" class="footer-link">Shopping Bag</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Collections</h4>
+          <ul class="footer-links-list">
+            <li><a href="shop.html" class="footer-link">Tech &amp; Gadgets</a></li>
+            <li><a href="shop.html" class="footer-link">Fashion &amp; Accessories</a></li>
+            <li><a href="shop.html" class="footer-link">Home &amp; Living</a></li>
+            <li><a href="shop.html" class="footer-link">Everyday Essentials</a></li>
+            <li><a href="product.html" class="footer-link">Headphones Spotlight</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Official Contact</h4>
+          <div class="footer-contact-items">
+            <div class="footer-contact-item">
+              <strong>Telephone Support</strong>
+              <a href="tel:08103719799">08103719799</a>
+            </div>
+            <div class="footer-contact-item">
+              <strong>Email Inquiries</strong>
+              <a href="mailto:princeemuobosa37@gmail.com">princeemuobosa37@gmail.com</a>
+            </div>
+            <div class="footer-contact-item">
+              <strong>Physical Location</strong>
+              <span>Address to be announced</span>
+            </div>
+            <div class="footer-contact-item">
+              <strong>Operating Hours</strong>
+              <span>Business hours to be confirmed</span>
+            </div>
+          </div>
+
+          <div class="footer-social-row">
+            <a href="#" class="footer-social-btn" title="Instagram" aria-label="Instagram">&#9672;</a>
+            <a href="#" class="footer-social-btn" title="Facebook" aria-label="Facebook">&#9632;</a>
+            <a href="#" class="footer-social-btn" title="TikTok" aria-label="TikTok">&#9650;</a>
+            <a href="#" class="footer-social-btn" title="X (Twitter)" aria-label="X">&#10006;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Prime Enterprise. All rights reserved. Built with semantic HTML5 &amp; CSS3.</div>
+        <div class="footer-legal-links">
+          <a href="about.html">Privacy &amp; Terms</a>
+          <a href="contact.html">Customer Care</a>
+          <a href="login.html">Account Access</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View your Prime Enterprise shopping bag. Review selected items, calculate shipping estimates, and proceed to checkout.">
+  <title>Shopping Bag | Prime Enterprise</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header Announcement Bar -->
+  <div class="header-top-bar">
+    <div class="container">
+      <span>Curated Lifestyle Essentials &bull; <strong>Peak Quality, Always in Our Prime</strong></span>
+      <a href="shop.html">Continue Exploring &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Global Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Prime Enterprise Homepage">
+        <span class="logo-prime">PRIME</span>
+        <span class="logo-enterprise">ENTERPRISE</span>
+        <span class="logo-mark" aria-hidden="true"></span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-label="Toggle Navigation">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="shop.html" class="nav-link">Shop</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="mobile-nav-actions">
+          <a href="cart.html" class="header-action-link cart-link-btn active">
+            <span>Shopping Bag</span>
+            <span class="cart-count-badge">2</span>
+          </a>
+          <a href="login.html" class="header-action-link">Sign In / Account</a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <a href="login.html" class="header-action-link">Sign In</a>
+        <a href="cart.html" class="header-action-link cart-link-btn" style="border: 1px solid var(--color-gold);">
+          <span>Bag</span>
+          <span class="cart-count-badge">2</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <nav class="breadcrumbs" aria-label="Breadcrumb Trail">
+    <div class="container">
+      <ol class="breadcrumbs-list">
+        <li class="breadcrumbs-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumbs-item"><a href="shop.html">Shop</a></li>
+        <li class="breadcrumbs-item active" aria-current="location">Shopping Bag</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <div class="container">
+      <header class="section-header">
+        <span class="eyebrow">Order Review</span>
+        <h1>Your Shopping Bag</h1>
+        <p class="section-subtitle">Review your selected items before proceeding to our secure checkout overview.</p>
+      </header>
+
+      <!-- Demo Disclaimer Box -->
+      <div class="demo-banner-box" role="region" aria-label="Cart demonstration disclaimer">
+        <span class="demo-tag">Sample Preview</span>
+        <div>
+          This shopping bag displays a sample state with 2 curated items. In accordance with strict static HTML/CSS standards, cart quantities and totals are pre-rendered visual demonstrations and do not update dynamically without client-side scripts.
+        </div>
+      </div>
+
+      <!-- Cart Layout -->
+      <div class="cart-layout" style="margin-bottom: 72px;">
+        <!-- Left: Cart Items List -->
+        <div class="cart-items-wrapper">
+          <h2 style="font-size: 1.25rem; margin-bottom: 18px; padding-bottom: 12px; border-bottom: 1px solid var(--color-border);">
+            Items in Bag (2)
+          </h2>
+
+          <!-- Cart Item 1 -->
+          <article class="cart-item">
+            <div class="cart-item-image">
+              <a href="product.html">
+                <img src="assets/images/product-headphones.jpg" alt="Premium Wireless Headphones" loading="lazy">
+              </a>
+            </div>
+            <div class="cart-item-info">
+              <h4><a href="product.html">Premium Wireless Headphones</a></h4>
+              <div class="cart-item-meta">Color: Matte Charcoal &bull; Model: PE-NC40</div>
+              <div class="cart-item-unit-price">Unit Price: &#8358;85,000</div>
+              <a href="#" class="cart-remove-btn" title="Remove item from bag">Remove Item</a>
+            </div>
+            <div class="cart-item-qty">
+              <label for="cart-qty-1" style="font-size: 0.72rem; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 4px; color: var(--color-slate);">Qty</label>
+              <input type="number" id="cart-qty-1" value="1" min="1" max="10" class="form-input" style="padding: 6px 10px; text-align: center;">
+            </div>
+            <div class="cart-item-total">
+              &#8358;85,000
+            </div>
+          </article>
+
+          <!-- Cart Item 2 -->
+          <article class="cart-item">
+            <div class="cart-item-image">
+              <a href="product.html">
+                <img src="assets/images/product-wallet.jpg" alt="Minimalist Leather Wallet" loading="lazy">
+              </a>
+            </div>
+            <div class="cart-item-info">
+              <h4><a href="product.html">Minimalist Leather Wallet</a></h4>
+              <div class="cart-item-meta">Material: Full-Grain Leather &bull; Finish: Raw Tan</div>
+              <div class="cart-item-unit-price">Unit Price: &#8358;24,500</div>
+              <a href="#" class="cart-remove-btn" title="Remove item from bag">Remove Item</a>
+            </div>
+            <div class="cart-item-qty">
+              <label for="cart-qty-2" style="font-size: 0.72rem; text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 4px; color: var(--color-slate);">Qty</label>
+              <input type="number" id="cart-qty-2" value="1" min="1" max="10" class="form-input" style="padding: 6px 10px; text-align: center;">
+            </div>
+            <div class="cart-item-total">
+              &#8358;24,500
+            </div>
+          </article>
+
+          <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 24px; margin-top: 12px;">
+            <a href="shop.html" class="btn btn-secondary btn-sm">&larr; Continue Shopping</a>
+            <span style="font-size: 0.84rem; color: var(--color-muted-text);">All prices include statutory VAT</span>
+          </div>
+        </div>
+
+        <!-- Right: Order Summary Panel -->
+        <aside class="order-summary-box" aria-label="Order Summary">
+          <h2 class="order-summary-title">Summary</h2>
+
+          <div class="summary-row">
+            <span>Bag Subtotal</span>
+            <strong style="color: var(--color-charcoal);">&#8358;109,500</strong>
+          </div>
+
+          <div class="summary-row">
+            <span>Estimated Delivery</span>
+            <strong style="color: var(--color-charcoal);">&#8358;4,500</strong>
+          </div>
+
+          <div class="summary-row" style="font-size: 0.82rem; color: var(--color-muted-text);">
+            <span>Delivery Tier</span>
+            <span>Standard Insured Transit</span>
+          </div>
+
+          <!-- Coupon Box -->
+          <div class="promo-apply-box">
+            <input type="text" class="promo-apply-input" placeholder="Promotional code" aria-label="Promo code">
+            <button type="button" class="btn btn-secondary btn-sm">Apply</button>
+          </div>
+
+          <div class="summary-row-total">
+            <span>Estimated Total</span>
+            <span class="text-gold">&#8358;114,000</span>
+          </div>
+
+          <p style="font-size: 0.78rem; color: var(--color-muted-text); margin: 14px 0 20px;">
+            Applicable delivery taxes and final shipping confirmation are verified during checkout.
+          </p>
+
+          <a href="checkout.html" class="btn btn-primary btn-block btn-lg" style="margin-bottom: 12px;">
+            Proceed to Checkout &rarr;
+          </a>
+
+          <a href="shop.html" class="btn btn-secondary btn-block">
+            Continue Shopping
+          </a>
+
+          <div style="margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--color-border); font-size: 0.82rem; color: var(--color-slate-deep); display: flex; flex-direction: column; gap: 8px;">
+            <div>&#128274; 256-Bit SSL Encrypted Verification</div>
+            <div>&#10003; 7-Day Return &amp; Inspection Guarantee</div>
+            <div>&#9742; Telephone Assistance: 08103719799</div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo brand-logo-light">
+            <span class="logo-prime">PRIME</span>
+            <span class="logo-enterprise">ENTERPRISE</span>
+            <span class="logo-mark" aria-hidden="true"></span>
+          </a>
+          <div class="footer-motto">"Peak Quality, Always in Our Prime"</div>
+          <p class="footer-description">
+            Prime Enterprise is an independent retail destination dedicated to elevated everyday essentials, minimalist acoustics, and enduring commuter lifestyle products.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="shop.html" class="footer-link">Product Catalogue</a></li>
+            <li><a href="about.html" class="footer-link">About Our Brand</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Support</a></li>
+            <li><a href="cart.html" class="footer-link">Shopping Bag</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Collections</h4>
+          <ul class="footer-links-list">
+            <li><a href="shop.html" class="footer-link">Tech &amp; Gadgets</a></li>
+            <li><a href="shop.html" class="footer-link">Fashion &amp; Accessories</a></li>
+            <li><a href="shop.html" class="footer-link">Home &amp; Living</a></li>
+            <li><a href="shop.html" class="footer-link">Everyday Essentials</a></li>
+            <li><a href="product.html" class="footer-link">Headphones Spotlight</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Official Contact</h4>
+          <div class="footer-contact-items">
+            <div class="footer-contact-item">
+              <strong>Telephone Support</strong>
+              <a href="tel:08103719799">08103719799</a>
+            </div>
+            <div class="footer-contact-item">
+              <strong>Email Inquiries</strong>
+              <a href="mailto:princeemuobosa37@gmail.com">princeemuobosa37@gmail.com</a>
+            </div>
+            <div class="footer-contact-item">
+              <strong>Physical Location</strong>
+              <span>Address to be announced</span>
+            </div>
+            <div class="footer-contact-item">
+              <strong>Operating Hours</strong>
+              <span>Business hours to be confirmed</span>
+            </div>
+          </div>
+
+          <div class="footer-social-row">
+            <a href="#" class="footer-social-btn" title="Instagram" aria-label="Instagram">&#9672;</a>
+            <a href="#" class="footer-social-btn" title="Facebook" aria-label="Facebook">&#9632;</a>
+            <a href="#" class="footer-social-btn" title="TikTok" aria-label="TikTok">&#9650;</a>
+            <a href="#" class="footer-social-btn" title="X (Twitter)" aria-label="X">&#10006;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Prime Enterprise. All rights reserved. Built with semantic HTML5 &amp; CSS3.</div>
+        <div class="footer-legal-links">
+          <a href="about.html">Privacy &amp; Terms</a>
+          <a href="contact.html">Customer Care</a>
+          <a href="login.html">Account Access</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
